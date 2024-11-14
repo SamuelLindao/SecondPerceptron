@@ -127,8 +127,8 @@ float w3 = random(-0.1f, 0.1f);
     for (int i = 0; i < img.height; i++) {
       for (int j = 0; j < img.width; j++) {
 
-float z = abs(j - img.width / 2) / (img.width / 2.0);
-float newS = (w1 * j) + (w2 * i) + (w3 * z) + bias;
+ z = abs(j - img.width / 2) ;
+float newS = (w3 * z) + 85000;
         if (newS > 0) {
           imgP.set(j, i, color(255, 255, 255));
         } else {
